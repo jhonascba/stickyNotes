@@ -1,0 +1,1 @@
+Sticky note app using HTML, CSS and JavaScript.
