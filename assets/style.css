@@ -1,4 +1,66 @@
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
 .stickyNotes {
     background: #fce47a;
-    min-width: 432px;
+    min-width: 400px;
+    min-height: 300px;
+    font-family: "Space Mono", monospace;
+    padding: 1rem;
+}
+
+.stickyNotes-title {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #f3f3f3;
+    color: #111401;
+}
+
+.stickyNotes-form {
+    display: flex;
+    justify-content: center;
+}
+
+.stickyNotes-form-input {
+    padding: 0.75rem;
+    font-family: "Space Mono", monospace;
+}
+
+.stickyNotes-form-button {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+}
+
+.stickyNotes-form-button:hover, .stickyNotes-task-button:hover {
+    background: #a09252;
+}
+
+.stickyNotes-itens {
+    padding: 0.15rem;
+    font-weight: bold;
+    color: #1b1a1a;
+    list-style-type: none;
+}
+
+.stickyNotes-task {
+    background: #d8b30c;
+    margin-bottom: 0.5rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stickyNotes-task-button {
+    width: 4rem;
+    height: 3rem;
+}
+
+.done {
+    text-decoration: line-through;
 }

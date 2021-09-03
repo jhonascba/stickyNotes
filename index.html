@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,18 @@
     <title>Sticky Notes</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body class="app">
     <div class="stickyNotes">
-        <h1>Sticky Notes</h1>
-        <input type="text">
-        
+        <h1 class="stickyNotes-title">Sticky Notes</h1>
+        <form class="stickyNotes-form" action="" data-form>
+            <input class="stickyNotes-form-input" type="text" data-input>
+            <button class="stickyNotes-form-button" data-button>New Item</button>
+        </form>
+        <ul class="stickyNotes-itens" data-ul>
+        </ul>
     </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
