@@ -1,3 +1,6 @@
+import ConcludeButton from "./components/concludeButton.js"
+import DeleteButton from "./components/deleteButton.js"
+
 const createTask = (event) => {
     event.preventDefault()
 
@@ -28,44 +31,14 @@ const validateForm = (value) => {
     }
 }
 
-
-const ConcludeButton = () => {
-    const concludeButton = document.createElement('button')
-    concludeButton.classList.add('stickyNotes-task-button')
-
-    concludeButton.innerText = 'Conclude'
-    concludeButton.addEventListener('click', concludeTask)
-
-    return concludeButton
-}
-
-const concludeTask = (event) => {
-    const concludeTask = event.target
-
-    const parent = concludeTask.parentElement
-
-    parent.classList.toggle('done')
-}
-
-const DeleteButton = () => {
-    const deleteButton = document.createElement('button')
-    deleteButton.classList.add('stickyNotes-task-button')
-
-    deleteButton.innerText = 'Delete'
-    deleteButton.addEventListener('click', deleteTask)
-
-    return deleteButton
-
-}
-
-const deleteTask = (event) => {
-    const deleteTask = event.target
-
-    const parent = deleteTask.parentElement
-
-    parent.remove()
-}
-
-
 const newItem = document.querySelector('[data-button]')
 newItem.addEventListener('click', createTask)
+
+const switchToGreen = () => {
+    const backgroundSticky = document.querySelector('[data-stickyNotes]')
+
+    backgroundSticky.classList.toggle('background-green')
+}
+
+const colorGreen = document.querySelector('[data-green]')
+colorGreen.addEventListener('click', switchToGreen)

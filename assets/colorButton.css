@@ -1,0 +1,54 @@
+.button-yellow, .button-green, .button-blue, .button-pink, .button-orange, .button-purple {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+
+.button-yellow {
+    background: #fce47a;
+}
+
+.button-yellow:hover {
+    background: #f8cf16;
+}
+
+.button-green {
+    background: #8abd64;
+}
+
+.button-green:hover {
+    background: #5eb918;
+}
+
+.button-blue {
+    background: #4193b2;
+}
+
+.button-blue:hover {
+    background: #0493c7;
+}
+
+.button-pink {
+    background: #f274bc;
+}
+
+.button-pink:hover {
+background: #f7048e;
+}
+
+.button-orange {
+    background: #dd844b;
+}
+
+.button-orange:hover {
+    background: #db5604;
+}
+
+.button-purple {
+    background: #763a7e;
+}
+
+.button-purple:hover {
+    background: #640470;
+}

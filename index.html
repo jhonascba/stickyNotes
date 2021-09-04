@@ -7,11 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Notes</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/colorButton.css">
+    <link rel="stylesheet" href="./assets/background.css">
 </head>
 
 <body class="app">
-    <div class="stickyNotes">
+    <div class="stickyNotes" data-stickyNotes>
         <h1 class="stickyNotes-title">Sticky Notes</h1>
+        <div class="stickyNotes-div-button">
+            <button class="button-yellow"></button>
+            <button class="button-green" data-green></button>
+            <button class="button-blue"></button>
+            <button class="button-pink"></button>
+            <button class="button-orange"></button>
+            <button class="button-purple"></button>
+        </div>
         <form class="stickyNotes-form" action="" data-form>
             <input class="stickyNotes-form-input" type="text" data-input>
             <button class="stickyNotes-form-button" data-button>New Item</button>
@@ -19,7 +29,7 @@
         <ul class="stickyNotes-itens" data-ul>
         </ul>
     </div>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
