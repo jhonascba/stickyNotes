@@ -20,9 +20,9 @@ const createTask = (event) => {
     list.appendChild(task)
     task.appendChild(ConcludeButton())
     task.appendChild(DeleteButton())
-
+    
     input.value = ""
-
+    
 }
 
 const validateForm = (value) => {
@@ -31,14 +31,66 @@ const validateForm = (value) => {
     }
 }
 
+
 const newItem = document.querySelector('[data-button]')
 newItem.addEventListener('click', createTask)
 
+//green
 const switchToGreen = () => {
     const backgroundSticky = document.querySelector('[data-stickyNotes]')
-
-    backgroundSticky.classList.toggle('background-green')
+    
+    backgroundSticky.classList = 'background-green'
 }
 
 const colorGreen = document.querySelector('[data-green]')
 colorGreen.addEventListener('click', switchToGreen)
+
+//blue
+const switchToBlue = () => {
+    const backgroundSticky = document.querySelector('[data-stickyNotes]')
+    
+    backgroundSticky.classList = 'background-blue'
+}
+
+const colorBlue = document.querySelector('[data-blue]')
+colorBlue.addEventListener('click', switchToBlue)
+
+//yellow
+const switchToYellow = () => {
+    const backgroundSticky = document.querySelector('[data-stickyNotes]')
+    
+    backgroundSticky.classList = 'stickyNotes'
+}
+
+const colorYellow = document.querySelector('[data-yellow]')
+colorYellow.addEventListener('click', switchToYellow)
+
+//pink
+const switchToPink = () => {
+    const backgroundSticky = document.querySelector('[data-stickyNotes]')
+    
+    backgroundSticky.classList = 'background-pink'
+}
+
+const colorPink = document.querySelector('[data-pink]')
+colorPink.addEventListener('click', switchToPink)
+
+//orange
+const switchToOrange = () => {
+    const backgroundSticky = document.querySelector('[data-stickyNotes]')
+    
+    backgroundSticky.classList = 'background-orange'
+}
+
+const colorOrange = document.querySelector('[data-orange]')
+colorOrange.addEventListener('click', switchToOrange)
+
+//purple
+const switchToPurple = () => {
+    const backgroundSticky = document.querySelector('[data-stickyNotes]')
+    
+    backgroundSticky.classList = 'background-purple'
+}
+
+const colorPurple = document.querySelector('[data-purple]')
+colorPurple.addEventListener('click', switchToPurple)
