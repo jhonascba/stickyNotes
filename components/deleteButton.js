@@ -12,7 +12,7 @@ const DeleteButton = () => {
 const deleteTask = (event) => {
     const deleteTask = event.target
 
-    const parent = deleteTask.parentElement
+    const parent = deleteTask.parentElement.parentElement
 
     parent.remove()
 }

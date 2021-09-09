@@ -11,7 +11,7 @@ const ConcludeButton = () => {
 const concludeTask = (event) => {
     const concludeTask = event.target
 
-    const parent = concludeTask.parentElement
+    const parent = concludeTask.parentElement.parentElement
 
     parent.classList.toggle('done')
 }

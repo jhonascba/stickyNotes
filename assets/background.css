@@ -1,39 +1,27 @@
+.background-yellow {
+    background: #fce47a;
+}
+
 .background-green {
     background: #8abd64;
-    min-width: 400px;
-    min-height: 300px;
-    font-family: "Space Mono", monospace;
-    padding: 1rem;
+    
 }
 
 .background-blue {
     background: #4193b2;
-    min-width: 400px;
-    min-height: 300px;
-    font-family: "Space Mono", monospace;
-    padding: 1rem;
+   
 }
 
 .background-pink {
     background: #f274bc;
-    min-width: 400px;
-    min-height: 300px;
-    font-family: "Space Mono", monospace;
-    padding: 1rem;
+    
 }
 
 .background-orange {
     background: #dd844b;
-    min-width: 400px;
-    min-height: 300px;
-    font-family: "Space Mono", monospace;
-    padding: 1rem;
+
 }
 
 .background-purple {
     background: #763a7e;
-    min-width: 400px;
-    min-height: 300px;
-    font-family: "Space Mono", monospace;
-    padding: 1rem;
 }

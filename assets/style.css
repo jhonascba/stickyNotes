@@ -7,7 +7,6 @@
 }
 
 .stickyNotes {
-    background: #fce47a;
     min-width: 400px;
     min-height: 300px;
     font-family: "Space Mono", monospace;
@@ -51,6 +50,9 @@
     font-weight: bold;
     color: #1b1a1a;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
 }
 
 .stickyNotes-task {
@@ -63,9 +65,14 @@
     border: solid #f3f3f3;
 }
 
+p {
+    margin-right: 1rem;
+}
+
 .stickyNotes-task-button {
-    width: 4rem;
+    width: 4.5rem;
     height: 2rem;
+    margin-right: 0.5rem;
 }
 
 .done {
