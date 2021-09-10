@@ -14,7 +14,7 @@ const createTask = (event) => {
   }
 
   const task = document.createElement('li')
-  const taskDiv = document.createElement('div') //div into the
+  const taskDiv = document.createElement('div')
   task.classList.add('stickyNotes-task')
   const template = `<p>${value}</p>`
   task.innerHTML = template
@@ -29,21 +29,12 @@ const createTask = (event) => {
   input.value = ''
 }
 
+
 const validateForm = (value) => {
   if (value == '') {
     return true
   }
 }
-
-const classColors = {
-  yellow: 'background-yellow',
-  green: 'background-green',
-  blue: 'background-blue',
-  pink: 'background-pink',
-  orange: 'background-orange',
-  purple: 'background-purple',
-}
-
 
 export default createTask
 new StickyNotes()
